@@ -1,0 +1,115 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_nb",
+						"type": "uint256"
+					}
+				],
+				"name": "getMot",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "_mot",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_mot",
+						"type": "string"
+					}
+				],
+				"name": "getNb",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_nb",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNb",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_nbMots",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_mot",
+						"type": "string"
+					}
+				],
+				"name": "setMot",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test2.sol": "test2"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test2.sol": {
+			"keccak256": "0x69a77d7de7a324c155991aa6b31ef5eef1ba3f017bdcec1d3c4d40e5be28ad12",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://ff664db384231addeb83b3e2b4329952e2917fb0e5f0caefe2a5adde80dc4bfa",
+				"dweb:/ipfs/QmRNkinFxdHKUa7xDxqVYidJGUGnvyiJyqfBvZctt8gt74"
+			]
+		}
+	},
+	"version": 1
+}

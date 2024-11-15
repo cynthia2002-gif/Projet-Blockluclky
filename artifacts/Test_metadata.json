@@ -1,0 +1,81 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getInfos",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "_addrs",
+						"type": "address[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "_mots",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_mot",
+						"type": "string"
+					}
+				],
+				"name": "setInfos",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test.sol": "Test"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test.sol": {
+			"keccak256": "0x98f1cfdd35cc9533970074d035234d12af9521c98aae00b9fb895d0106b95281",
+			"urls": [
+				"bzz-raw://139ce66c700ae0ff8f81ac6a31a1734589ec7393cf4a2876513a0ca44a36756d",
+				"dweb:/ipfs/QmbgE5EhU9LSwoeF5u2KQHsS2rjHV7xHiUTdWNU8BM5Cq7"
+			]
+		}
+	},
+	"version": 1
+}

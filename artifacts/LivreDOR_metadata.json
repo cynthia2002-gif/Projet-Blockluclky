@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addrAuteur",
+						"type": "address"
+					}
+				],
+				"name": "getMessage",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "_messages",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					}
+				],
+				"name": "setMessage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"LivreDOR.sol": "LivreDOR"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"LivreDOR.sol": {
+			"keccak256": "0x34e5a64ddccf8a223d324d0fbe015d096b8470cef1207d1d73ece8b517736dc6",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://231e4c2fdc342620ce6cf77bee039e4026aec265622734e94005916317225faf",
+				"dweb:/ipfs/QmcVokVBV8e9Uswvf9H7mcCwWV6cagbN2r1Pz4RLxPPDss"
+			]
+		}
+	},
+	"version": 1
+}
