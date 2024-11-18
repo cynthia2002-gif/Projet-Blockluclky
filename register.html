@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    
+    <!-- Place the CSS here -->
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #474545;
+            color: #b3b3b0;
+            display: flex; /* Ajout de flexbox */
+            justify-content: center; /* Centre horizontalement */
+            align-items: center; /* Centre verticalement */
+            height: 100vh; /* Prend toute la hauteur de la fenêtre */
+        }
+        #form-title {
+            text-transform: uppercase;
+            font-size: 25px;
+            color: #b3b3b0;
+            text-align: center;
+        }
+        #form {
+            width: 100%;
+            max-width: 400px; /* Limite la largeur du formulaire */
+            background-color: #474545;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Effet d'ombre pour un meilleur style */
+        }
+        .field {
+            display: block;
+            padding: 10px 0;
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 12px;
+            border: 0;
+            text-align: center;
+            background-color: #ececec; /* Meilleure lisibilité */
+            color: #333;
+        }
+        .submit {
+            display: block;
+            padding: 10px 10px;
+            width: 100%;
+            border-radius: 12px;
+            color: #020202;
+            background-color: #d8bd24;
+            border: 0;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #wlcm {
+            text-align: center;
+        }
+        a {
+            color: #d8bd24;
+            text-decoration: none;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <div id="all">
+        <div action="#" id="form">
+            <h1 id="form-title">Inscription</h1><br/>
+            <p>Pseudo</p>
+            <input id="pseudo" class="field" type="text" placeholder="Pseudo">
+            <p>Age</p>
+            <input id="age" class="field" type="number" placeholder="Age">
+            <p>Adresse</p>
+            <input id="adresse" class="field" type="text" placeholder="Adresse">
+            <p>Ville</p>
+            <input id="ville" class="field" type="text" placeholder="Ville">
+            <p>Code Postale</p>
+            <input id="codepostale" class="field" type="number" placeholder="Code Postale"><br/>
+            <input id="cb" type="checkbox"><a href="#">En m'inscrivant, j'atteste avoir lu les conditions d'utilisation</a><br/>
+            <input id="submit" class="submit" type="submit" value="Submit">
+        </div>
+        <h1 id="wlcm"></h1>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#submit").on("click", function (e) {
+                e.preventDefault(); // Empêche l'envoi du formulaire
+
+                const pseudo = $("#pseudo").val();
+                const age = $("#age").val();
+                const adresse = $("#adresse").val();
+                const ville = $("#ville").val();
+                const codepostale = $("#codepostale").val();
+                const conditionsChecked = $("#cb").is(":checked");
+
+                if (!pseudo || !age || !adresse || !ville || !codepostale) {
+                    alert("Tous les champs doivent être remplis !");
+                    return;
+                }
+
+                if (ville.toLowerCase() !== "etherbay") {
+                    alert("Seules les inscriptions de la ville 'Etherbay' sont acceptées.");
+                    return;
+                }
+
+                if (!conditionsChecked) {
+                    alert("Vous devez accepter les conditions d'utilisation !");
+                    return;
+                }
+
+                $("#form").fadeOut();
+                $("#wlcm").html(`Hello ${pseudo}, vous êtes bien inscrit ! Bonne chance !`);
+            });
+        });
+    </script>
+</body>
+</html>
