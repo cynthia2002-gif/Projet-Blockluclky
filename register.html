@@ -78,7 +78,7 @@
             <input id="ville" class="field" type="text" placeholder="Ville">
             <p>Code Postale</p>
             <input id="codepostale" class="field" type="number" placeholder="Code Postale"><br/>
-            <input id="cb" type="checkbox"><a href="#">En m'inscrivant, j'atteste avoir lu les conditions d'utilisation</a><br/>
+            <input id="cb" type="checkbox"><a href="conditions.html" target="_blank">En m'inscrivant, j'atteste avoir lu les <span style="text-decoration: underline;">conditions d'utilisation</span></a><br/>
             <input id="submit" class="submit" type="submit" value="Submit">
         </div>
         <h1 id="wlcm"></h1>
@@ -96,21 +96,31 @@
                 const codepostale = $("#codepostale").val();
                 const conditionsChecked = $("#cb").is(":checked");
 
+                // Vérification de la présence de tous les champs
                 if (!pseudo || !age || !adresse || !ville || !codepostale) {
                     alert("Tous les champs doivent être remplis !");
                     return;
                 }
 
+                // Vérification de l'âge
+                if (parseInt(age) < 18) {
+                    alert("Vous devez avoir 18 ans ou plus pour vous inscrire.");
+                    return;
+                }
+
+                // Vérification de la ville
                 if (ville.toLowerCase() !== "etherbay") {
                     alert("Seules les inscriptions de la ville 'Etherbay' sont acceptées.");
                     return;
                 }
 
+                // Vérification de l'acceptation des conditions
                 if (!conditionsChecked) {
                     alert("Vous devez accepter les conditions d'utilisation !");
                     return;
                 }
 
+                // Si tout est valide, afficher un message de bienvenue
                 $("#form").fadeOut();
                 $("#wlcm").html(`Hello ${pseudo}, vous êtes bien inscrit ! Bonne chance !`);
             });
