@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Blockchain & Ethereum</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FDF900;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grille flexible qui s'adapte */
+            gap: 20px;
+            margin-bottom: 40px;
+            align-items: center; /* Centrer les questions et réponses */
+        }
+
+        .faq-item {
+            background-color: #1E1E1E;
+            border: 2px solid #F1C24C;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ajout d'ombre pour un effet 3D */
+        }
+
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #F1C24C;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            font-size: 1.1rem;
+            color: #FFFFFF;
+        }
+
+        /* Nouvelle section divisé en trois */
+        .participation-faq {
+            background-color: #1E1E1E;
+            border: 2px solid #F1C24C;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 100%; /* Largeur maximale pour un meilleur affichage */
+            max-width: 1200px; /* Augmenter la largeur maximale */
+            margin: 40px auto; /* Centrer le div et ajouter un espace autour */
+        }
+
+        .faq-segment {
+            margin-bottom: 30px;
+            background-color: #2C2C2C;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .faq-segment:last-child {
+            margin-bottom: 0;
+        }
+
+        .feedback-section {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px; /* Espacement supplémentaire en bas */
+        }
+
+        .btn-feedback {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #F1C24C;
+            color: #000;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-feedback:hover {
+            background-color: #e0a93b;
+        }
+
+        /* Styles responsives pour les petits écrans */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem; /* Taille de titre plus petite */
+            }
+
+            .faq-item {
+                padding: 10px;
+            }
+
+            .faq-question {
+                font-size: 1rem; /* Réduction de la taille des questions */
+            }
+
+            .btn-feedback {
+                font-size: 1rem; /* Taille du bouton réduite sur mobile */
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Titre principal -->
+        <h1>FAQ : Comprendre la Blockchain, Ethereum et Participer à une Loterie Blockchain</h1>
+        <p>Apprenez tout sur la blockchain, Ethereum, et découvrez comment participer à une loterie blockchain avec les réponses à ces questions fréquemment posées.</p>
+
+        <!-- Grille de FAQ -->
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">Qu'est-ce que la blockchain ?</div>
+                <div class="faq-answer">La blockchain est une technologie de registre distribué qui permet de stocker des informations de manière décentralisée et sécurisée, sans l'intermédiaire d'une autorité centrale.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Comment fonctionne Ethereum ?</div>
+                <div class="faq-answer">Ethereum est une plateforme décentralisée qui permet de créer et exécuter des contrats intelligents (smart contracts) sans avoir besoin d'une autorité centrale, offrant ainsi une transparence totale.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Qu'est-ce qu'un smart contract ?</div>
+                <div class="faq-answer">Un smart contract est un programme informatique qui s'exécute automatiquement lorsque certaines conditions sont remplies, garantissant ainsi l'exécution sans intervention humaine.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Pourquoi Ethereum est-il différent de Bitcoin ?</div>
+                <div class="faq-answer">Ethereum n'est pas seulement une crypto-monnaie comme Bitcoin, mais une plateforme qui permet de développer des applications décentralisées (dApps) et de déployer des contrats intelligents.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Qu'est-ce qu'un token ERC-20 ?</div>
+                <div class="faq-answer">Un token ERC-20 est un type de crypto-monnaie qui fonctionne sur la blockchain Ethereum et suit des règles spécifiques qui permettent aux utilisateurs de l'échanger ou de l'utiliser au sein de l'écosystème Ethereum.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Que signifie la décentralisation ?</div>
+                <div class="faq-answer">La décentralisation désigne un système où aucune entité centrale n'a le contrôle total, ce qui rend le système plus transparent et résistant aux attaques ou manipulations.</div>
+            </div>
+        </div>
+
+        <!-- Section "Comment participer à une loterie blockchain ?" séparée en trois parties -->
+        <div class="participation-faq">
+            <!-- Première section -->
+            <div class="faq-segment">
+                <div class="faq-question">Introduction à la participation</div>
+                <div class="faq-answer">
+                    <p>Participer à une loterie blockchain est simple, et grâce à des outils comme Ganache, vous pouvez participer sans risque financier en utilisant des Ethereum fictifs.</p>
+                </div>
+            </div>
+
+            <!-- Deuxième section -->
+            <div class="faq-segment">
+                <div class="faq-question">Obtenez des Ethereum gratuits via Ganache</div>
+                <div class="faq-answer">
+                    <p>Ganache est un réseau privé Ethereum qui permet de générer des Ethereum fictifs pour tester des applications. Vous pouvez obtenir des Ethereum gratuits pour vous entraîner à participer à des loteries blockchain.</p>
+                </div>
+            </div>
+
+            <!-- Troisième section -->
+            <div class="faq-segment">
+                <div class="faq-question">Comment participer à la loterie blockchain</div>
+                <div class="faq-answer">
+                    <p>Une fois que vous avez des Ethereum fictifs, vous pouvez vous inscrire à une loterie blockchain en envoyant vos tokens vers la plateforme de loterie. Le processus est automatisé grâce aux smart contracts, garantissant une équité totale.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section de feedback -->
+        <div class="feedback-section">
+            <p>Partagez votre avis pour nous aider à améliorer  votre expérience.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiOtdMT81gfIkvRi68tIl7miOdirAQ7nm_QQ-dD9d8I2QgIQ/viewform?usp=pp_url" target="_blank" class="btn-feedback">Donner votre avis</a>
+        </div>
+   
